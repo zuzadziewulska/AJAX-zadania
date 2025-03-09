@@ -5,17 +5,17 @@ const getData = () => {
         for (let user of data) {
             let pID = document.createElement('p');
             let pName = document.createElement('p')
-            let pWebside = document.createElement('p')
+            let pWebsite = document.createElement('p')
 
             pID.innerText = `User ID: ${user.id}`
             pName.innerText = `User Name: ${user.name}`
-            pWebside.innerHTML = `User URL: ${user.webside}<br />------`
+            pWebsite.innerHTML = `User URL: ${user.website}<br />------`
 
             let body = document.body;
 
             body.appendChild(pID);
             body.appendChild(pName);
-            body.appendChild(pWebside);
+            body.appendChild(pWebsite);
         }
     })
     .catch(error => {
